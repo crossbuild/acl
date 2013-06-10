@@ -106,9 +106,9 @@ install-lib: default $(addsuffix -install-lib,$(SUBDIRS))
 	$(MAKE) -C $* install-dev
 
 realclean distclean: clean
-	rm -f $(LDIRT) $(CONFIGURE)
-	rm -f include/builddefs include/config.h install-sh libtool
-	rm -rf autom4te.cache Logs
+#	rm -f $(LDIRT) $(CONFIGURE)
+#	rm -f include/builddefs include/config.h install-sh libtool
+#	rm -rf autom4te.cache Logs
 
 .PHONY: tests root-tests nfs-tests
 tests root-tests nfs-tests: default
